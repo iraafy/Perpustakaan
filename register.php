@@ -56,18 +56,18 @@
 				<form method="post">
 					<div class="mb-3">
 						<label for="nama" class="form-label">Nama</label>
-						<input type="text" name="nama" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap">
+						<input type="text" name="nama" class="form-control" id="nama" placeholder="Masukkan Nama Lengkap" required>
 					</div>
 
 					<label for="jk" class="mb-2">Jenis Kelamin</label>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" value="P" name="jk" id="jk1">
+						<input class="form-check-input" type="radio" value="P" name="jk" id="jk1" required>
 						<label class="form-check-label" for="jk1">
 							Perempuan
 						</label>
 					</div>
 					<div class="form-check mb-3">
-						<input class="form-check-input" type="radio" value="L" name="jk" id="jk2">
+						<input class="form-check-input" type="radio" value="L" name="jk" id="jk2" required>
 						<label class="form-check-label" for="jk2">
 							Laki-Laki
 						</label>
@@ -75,27 +75,27 @@
 
 					<div class="mb-3">
 						<label for="jurusan" class="form-label">Jurusan</label>
-						<input type="text" name="jurusan" class="form-control" id="jurusan" placeholder="Masukkan Jurusan">
+						<input type="text" name="jurusan" class="form-control" id="jurusan" placeholder="Masukkan Jurusan" required>
 					</div>
 
 					<div class="mb-3">
 						<label for="email" class="form-label">Email</label>
-						<input type="email" name="email" class="form-control" id="email" placeholder="Masukkan Email">
+						<input type="email" name="email" class="form-control" id="email" placeholder="Masukkan Email" required>
 					</div>
 
 					<div class="mb-3">
 						<label for="telepon" class="form-label">Nomor telepon</label>
-						<input type="text" name="telepon" class="form-control" id="telepon" placeholder="Masukkan Nomor Telepon">
+						<input type="text" name="telepon" class="form-control" id="telepon" placeholder="Masukkan Nomor Telepon" required>
 					</div>
 					
 					<div class="mb-3">
 						<label for="alamat" class="form-label"> Alamat</label>
-						<input type="text" name="alamat" class="form-control" id="alamat" placeholder="Masukkan Alamat">
+						<input type="text" name="alamat" class="form-control" id="alamat" placeholder="Masukkan Alamat" required>
 					</div>
 
 					<div class="mb-4">
 						<label for="password" class="form-label">Password</label>
-						<input type="password" name="password" class="form-control" id="passwordHelpBlock" placeholder="Masukkan Password">
+						<input type="password" name="password" class="form-control" id="passwordHelpBlock" placeholder="Masukkan Password" required>
 						<div id="passwordHelpBlock" class="form-text"> Your password must be 5-8 characters long, contain letters and numbers.</div>
 					</div>
 
