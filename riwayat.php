@@ -9,7 +9,7 @@
     include 'conn.php';
     $find_anggota = mysqli_query($conn, 'select * from anggota;');
     $find = mysqli_query($conn, 'select * from buku;');
-	$data_pinjam = mysqli_query($conn, 'Select kode_buku, judul_buku, tanggal_pinjam, tanggal_kembali, sudah_dikembalikan, id_anggota from buku a join peminjaman b on a.id_buku = b.id_buku'); 
+	$data_pinjam = mysqli_query($conn, 'Select kode_buku, judul_buku, tanggal_pinjam, tanggal_kembali, sudah_dikembalikan, id_anggota, id_peminjaman from buku a join peminjaman b on a.id_buku = b.id_buku'); 
 ?>
 
 <!doctype html>
@@ -99,16 +99,11 @@
                                 <td><?php echo $data['tanggal_pinjam'] ?> </td>
                                 <td><?php echo $data['tanggal_kembali'] ?> </td>
                                 <td>
-                                    <?php $getKode = $data['kode_buku']; ?>
-                                    <?php foreach ($find as $dataFind) { ?>
-                                        <?php if ($dataFind['kode_buku'] == $getKode) { ?>
-                                            <?php if ($data['sudah_dikembalikan'] == "1") { ?>
-                                                <a href="pengembalian.php?id_buku=<?php echo $dataFind['id_buku']; ?>" class="btn disabled" style="background-color: lightgrey; color: black;">Sudah Dikembalikan</a>
-                                                <?php } else { ?>
-                                                    <a href="pengembalian.php?id_buku=<?php echo $dataFind['id_buku']; ?>" class="btn btn-primary">Kembalikan</a>
-                                                    <?php } ?>
-                                        <?php } ?>
-                                    <?php } ?>
+									<?php if ($data['sudah_dikembalikan'] == "1") { ?>
+										<a href="pengembalian.php?id_peminjaman=<?php echo $data['id_peminjaman']; ?>" class="btn disabled" style="background-color: lightgrey; color: black;">Sudah Dikembalikan</a>
+									<?php } else { ?>
+										<a href="pengembalian.php?id_peminjaman=<?php echo $data['id_peminjaman']; ?>" class="btn btn-primary">Kembalikan</a>
+									<?php } ?>
                                 </td>
                             </tr>
 					    <?php } ?>

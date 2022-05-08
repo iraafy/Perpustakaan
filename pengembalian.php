@@ -8,7 +8,7 @@
         exit;
     }
     else{
-        $query = "UPDATE peminjaman SET sudah_dikembalikan = 1 WHERE id_buku = $_GET[id_buku]";
+        $query = "UPDATE peminjaman SET sudah_dikembalikan = 1 WHERE id_peminjaman = $_GET[id_peminjaman]";
         mysqli_query($conn, $query);
         header('location: riwayat.php');
     }
