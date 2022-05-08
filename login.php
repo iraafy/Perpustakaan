@@ -63,12 +63,12 @@
 				<form method="post">
 					<div class="mb-3">
 						<label for="email" class="form-label">Email</label>
-						<input type="email" name="email" class="form-control" id="email" placeholder="Masukkan Email">
+						<input type="email" name="email" class="form-control" id="email" placeholder="Masukkan Email" required>
 					</div>
 
 					<div class="mb-1">
 						<label for="password" class="form-label">Password</label>
-						<input type="password" name="password" class="form-control" placeholder="Masukkan Password">
+						<input type="password" name="password" class="form-control" placeholder="Masukkan Password" required>
 					</div>
 
 					<div class="d-grid mb-1">
