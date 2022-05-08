@@ -1,0 +1,7 @@
+.btn-primary {
+    background-color: rgb(91, 153, 211) !important;
+}
+
+.active {
+    font-weight: bold !important;
+}
