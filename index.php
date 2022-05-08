@@ -90,8 +90,7 @@
 											</div>
 											<div class="modal-body" style="text-align: justify">
 												<table class="table">
-													<!-- <tr hidden="hidden"> -->
-													<tr>
+													<tr hidden="hidden">
 														<td>
 															ID Buku
 														</td>
